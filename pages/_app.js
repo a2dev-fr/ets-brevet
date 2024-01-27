@@ -7,7 +7,7 @@ const App = ({ Component, pageProps }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 50);
+    }, 1000);
   }, []);
 
   return (
@@ -25,7 +25,7 @@ const App = ({ Component, pageProps }) => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {/*====== Title ======*/}
-        <title>Gadden - Garden &amp; Landscaping React NextJS Template</title>
+        <title>Entreprise Brevet &amp; paysage à Charbonnières-les-Bains</title>
         {/*====== Favicon Icon ======*/}
         <link
           rel="shortcut icon"
