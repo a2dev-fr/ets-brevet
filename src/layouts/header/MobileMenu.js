@@ -26,6 +26,7 @@ const MobileMenu = ({ handleShow, logo, extraClass, barIcon }) => {
                   <img
                     src={logo ? logo : "assets/images/logo/logo-black.png"}
                     alt="Site Logo"
+                    height={55}
                   />
                 </a>
               </Link>
