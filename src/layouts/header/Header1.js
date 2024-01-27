@@ -71,6 +71,7 @@ const Header1 = () => {
                     <img
                       src="assets/images/logo/logo-black.png"
                       alt="Site Logo"
+                      height={55}
                     />
                   </a>
                 </Link>
