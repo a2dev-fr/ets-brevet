@@ -6,7 +6,7 @@ import Link from "next/link";
 import Slider from "react-slick";
 const Index3 = () => {
   return (
-    <Layout header={3} footer={3}>
+    <Layout header={2} footer={3}>
       {/*====== Start Banner Section ======*/}
       <section className="banner-section">
         {/*====== Hero Wrapper ======*/}

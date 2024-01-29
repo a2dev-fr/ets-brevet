@@ -5,7 +5,7 @@ import Link from "next/link";
 import Slider from "react-slick";
 const Index = () => {
   return (
-    <Layout header={1} footer={1}>
+    <Layout header={2} footer={2}>
       {/*====== Start Banner Section ======*/}
       <section className="banner-section">
         {/*=== Hero Wrapper ===*/}
@@ -31,20 +31,24 @@ const Index = () => {
                 {/*=== Hero Content ===*/}
                 <div className="hero-content">
                   <h1 className="wow fadeInUp" data-wow-delay=".4s">
-                    Green Environments Make You Happy and provide Oxygen
+                  Votre paysagiste à votre service depuis 1890
                   </h1>
+
+                  <h3 style={{marginBottom:'30px'}}>
+                  à Charbonnières-les-Bains
+                  </h3>
                   <p className="wow fadeInDown" data-wow-delay=".6s">
-                    We Provide Beautiful Gardening &amp; Landscaping
+                  Notre équipe se tient à votre disposition pour la création, et l’entretien de votre extérieur.
                   </p>
                   <div
                     className="hero-button mb-30 wow fadeInUp"
                     data-wow-delay=".7s"
                   >
                     <Link legacyBehavior href="/about">
-                      <a className="main-btn golden-btn mb-10">Explore More</a>
+                      <a className="main-btn golden-btn mb-10">Notre histoire</a>
                     </Link>
-                    <Link legacyBehavior href="/index">
-                      <a className="main-btn filled-btn mb-10">How It Work</a>
+                    <Link legacyBehavior href="/services">
+                      <a className="main-btn filled-btn mb-10">Nos services</a>
                     </Link>
                   </div>
                 </div>
@@ -56,7 +60,7 @@ const Index = () => {
                   data-wow-delay=".75s"
                 >
                   <img
-                    src="assets/images/hero/hero-three_one.jpg"
+                    src="assets/images/hero/arbres.jpg"
                     alt="Hero Image"
                   />
                   <div className="shape hero-svg">

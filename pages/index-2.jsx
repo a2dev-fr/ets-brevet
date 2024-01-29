@@ -6,7 +6,7 @@ import { Nav, Tab } from "react-bootstrap";
 import Slider from "react-slick";
 const Index2 = () => {
   return (
-    <Layout>
+    <Layout footer={2}>
       {/*====== Start Banner Section ======*/}
       <section className="banner-section">
         {/*====== Hero Wrapper One ======*/}
