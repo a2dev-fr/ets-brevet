@@ -25,13 +25,16 @@ const App = ({ Component, pageProps }) => {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {/*====== Title ======*/}
-        <title>Entreprise Brevet &amp; paysage à Charbonnières-les-Bains</title>
+        <title>Entreprise Brevet - Votre paysagiste à Charbonnières-les-Bains</title>
         {/*====== Favicon Icon ======*/}
         <link
           rel="shortcut icon"
           href="assets/images/favicon.ico"
           type="image/png"
         />
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png"/>
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png"/>
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-16x16.png"/>
         {/*====== Google Fonts ======*/}
         <link
           href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"

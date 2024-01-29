@@ -103,7 +103,7 @@
                             border-radius: 0;
                             line-height: 2.5;
                             margin: 0;
-                            border: 1px dashed #fff;
+                            border: 1px solid #fff;
                             border-radius: 5px;
                             @extend %white-color;
                             & i{
@@ -542,17 +542,17 @@
                 display: none;
             }
             & a.brand-logo{
-                padding: 45px 50px;
+                // padding: 45px 50px;
                 @extend %secondary-bg;
                 @include border-radius(100px);
                 @media #{$lp}{
-                    padding: 25px 30px;
+                    // padding: 25px 30px;
                 }
                 @media #{$lm}{
-                    padding: 25px 30px;
+                    // padding: 25px 30px;
                 }
                 @media #{$xss}{
-                    padding: 15px 20px;
+                    // padding: 15px 20px;
                 }
             }
         }
@@ -574,7 +574,7 @@
             padding-inline-start: 35px;
             display: flex;
             align-items: center;
-            justify-content: space-between;
+            justify-content: end;
             flex-grow: 2;
             @media #{$lm}{
                 justify-content: flex-end;

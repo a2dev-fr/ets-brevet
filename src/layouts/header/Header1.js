@@ -60,7 +60,7 @@ const Header1 = () => {
           </div>
         </div>
         {/*====== Header Navigation ======*/}
-        <div className="header-navigation d-xl-block d-none">
+        <div className="header-navigation d-xl-block sticky">
           <div className="nav-overlay" />
           <div className="container-fluid">
             <div className="primary-menu">

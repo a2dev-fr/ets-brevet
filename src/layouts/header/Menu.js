@@ -4,59 +4,39 @@ const Menu = () => {
   return (
     <nav className="main-menu">
       <ul>
-        <li className="menu-item has-children">
-          <a href="#">
-            Home
-            <span className="dd-trigger">
-              <i className="far fa-angle-down" />
-            </span>
+        <li className="menu-item">
+          <a href="/#">
+            Accueil
           </a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="/">
-                Home 01
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="index-2">
-                Home 02
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="index-3">
-                Home 03
-              </Link>
-            </li>
-          </ul>
         </li>
         <li className="menu-item">
           <Link legacyBehavior href="about">
-            About
+            Notre histoire
           </Link>
         </li>
         <li className="menu-item has-children">
           <a href="#">
-            Service
+            Services
             <span className="dd-trigger">
               <i className="far fa-angle-down" />
             </span>
           </a>
           <ul className="sub-menu">
             <li>
-              <Link legacyBehavior href="service">
-                Our Service
+              <Link legacyBehavior href="paysagiste">
+                Paysagiste
               </Link>
             </li>
             <li>
-              <Link legacyBehavior href="service-details">
-                Service Details
+              <Link legacyBehavior href="pepinieriste">
+                Pépiniériste
               </Link>
             </li>
           </ul>
         </li>
         <li className="menu-item has-children">
           <a href="#">
-            Portfolio
+            Réalisations
             <span className="dd-trigger">
               <i className="far fa-angle-down" />
             </span>
@@ -83,8 +63,14 @@ const Menu = () => {
               </Link>
             </li>
           </ul>
+          
         </li>
-        <li className="menu-item has-children">
+        <li className="menu-item">
+          <a href="/contact">
+            Contact
+          </a>
+        </li>
+        {/* <li className="menu-item has-children">
           <a href="#">
             Blog
             <span className="dd-trigger">
@@ -148,7 +134,7 @@ const Menu = () => {
               </Link>
             </li>
           </ul>
-        </li>
+        </li> */}
       </ul>
     </nav>
   );

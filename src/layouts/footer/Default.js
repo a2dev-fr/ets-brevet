@@ -14,19 +14,19 @@ const Default = () => {
                     <Link legacyBehavior href="/index">
                       <a>
                         <img
-                          src="assets/images/logo/logo-white.png"
+                          src="assets/images/logo/ets-brevet-rect.png"
                           alt="Logo"
+                          height={100}
                         />
                       </a>
                     </Link>
                   </div>
                   <p>
-                    Quis autem eum reprehenderit volutate velit quam molestiae
-                    conseuatur{" "}
+                  Entreprise Brevet, votre paysagiste à votre service depuis 1890 à Charbonnières-les-Bains
                   </p>
                   <Link legacyBehavior href="/contact">
                     <a className="main-btn filled-btn filled-white">
-                      Contact Us
+                      Nous Contacter
                     </a>
                   </Link>
                 </div>
@@ -35,15 +35,15 @@ const Default = () => {
             <div className="col-lg-3 col-md-6 col-sm-6">
               {/*====== Footer Widget ======*/}
               <div className="footer-widget contact-info-widget mb-40 wow fadeInDown">
-                <h4 className="widget-title">Get In Touch</h4>
+                <h4 className="widget-title">Informations pratique</h4>
                 <div className="widget-content">
                   <ul className="info-list">
-                    <li>558 Main Street, 2nd Block Melbourne, Australia</li>
+                    <li>8 Chemin de la Bressonnière <br></br> 69260 Charbonnières-les-Bains </li>
                     <li>
-                      <a href="mailto:support@gmail.com">support@gmail.com</a>
+                      <a href="mailto:contact@ets-brevet.fr">contact@ets-brevet.fr</a>
                     </li>
                     <li>
-                      <a href="tel:+000(123)45688">+000 (123) 456 88</a>
+                      <a href="tel:0478870001">04 78 87 00 01</a>
                     </li>
                   </ul>
                 </div>
@@ -52,20 +52,20 @@ const Default = () => {
             <div className="col-lg-2 col-md-6 col-sm-6">
               {/*====== Footer Widget ======*/}
               <div className="footer-widget footer-nav-widget mb-40 wow fadeInUp">
-                <h4 className="widget-title">Quick Link</h4>
+                <h4 className="widget-title">Liens rapide</h4>
                 <div className="widget-content">
                   <ul className="footer-nav">
                     <li>
-                      <a href="#">About Company</a>
+                      <a href="/about">Notre histoire</a>
                     </li>
                     <li>
-                      <a href="#">Popular Services</a>
+                      <a href="/services">Services</a>
                     </li>
                     <li>
-                      <a href="#">Need a Career ?</a>
+                      <a href="/gallery">Réalisations</a>
                     </li>
                     <li>
-                      <a href="#">Meet Our Team</a>
+                      <a href="/contact">Contact</a>
                     </li>
                   </ul>
                 </div>
@@ -79,7 +79,7 @@ const Default = () => {
                     <h2 className="number">
                       <span className="count">25</span>+
                     </h2>
-                    <h6>Years Of Experience</h6>
+                    <h6>Années d'expériences</h6>
                     <a href="#" className="icon-btn">
                       <i className="far fa-arrow-right" />
                     </a>
@@ -95,7 +95,7 @@ const Default = () => {
             <div className="col-lg-6">
               {/*====== Copyright Text ======*/}
               <div className="copyright-text">
-                <p>Copy© 2023 Gadden. All Rights Reserved.</p>
+                <p>© 2023 A2DEV. Tous droits réservés.</p>
               </div>
             </div>
             <div className="col-lg-6">
@@ -103,13 +103,10 @@ const Default = () => {
               <div className="copyright-nav float-lg-right">
                 <ul>
                   <li>
-                    <a href="#">Setting &amp; Privacy</a>
+                    <a href="/legals">Mentions légales</a>
                   </li>
                   <li>
-                    <a href="#">Faqs</a>
-                  </li>
-                  <li>
-                    <a href="#">Food Menu</a>
+                    <a href="/contact">Contact</a>
                   </li>
                 </ul>
               </div>
