@@ -34,15 +34,15 @@ const Index = () => {
                   Votre paysagiste à votre service depuis 1890
                   </h1>
 
-                  <h3 style={{marginBottom:'30px'}}>
+                  <h3 className="wow fadeInLeft mb-30" data-wow-delay=".6s">
                   à Charbonnières-les-Bains
                   </h3>
-                  <p className="wow fadeInDown" data-wow-delay=".6s">
+                  <p className="wow fadeInDown" data-wow-delay=".7s">
                   Notre équipe se tient à votre disposition pour la création, et l’entretien de votre extérieur.
                   </p>
                   <div
                     className="hero-button mb-30 wow fadeInUp"
-                    data-wow-delay=".7s"
+                    data-wow-delay=".9s"
                   >
                     <Link legacyBehavior href="/about">
                       <a className="main-btn golden-btn mb-10">Notre histoire</a>
@@ -114,7 +114,7 @@ const Index = () => {
                         <i className="fal fa-long-arrow-right" />
                       </a>
                     </div>
-                    <h5 className="title">Garden Maintenance</h5>
+                    <h5 className="title">Expertise en botanique et espèces végétales</h5>
                   </div>
                 </div>
               </div>
@@ -128,7 +128,7 @@ const Index = () => {
                         <i className="fal fa-long-arrow-right" />
                       </a>
                     </div>
-                    <h5 className="title">Garden Overhauls</h5>
+                    <h5 className="title">Conseils personnalisés en fonction de votre terrain</h5>
                   </div>
                 </div>
               </div>
@@ -142,7 +142,7 @@ const Index = () => {
                         <i className="fal fa-long-arrow-right" />
                       </a>
                     </div>
-                    <h5 className="title">Landscape Design</h5>
+                    <h5 className="title">Aménagements sur-mesure pour chaque espace extérieur</h5>
                   </div>
                 </div>
               </div>
@@ -159,9 +159,9 @@ const Index = () => {
                       <i className="fas fa-check" />
                     </div>
                     <h2 className="number">
-                      <Counter end={859} />
+                      <Counter decimals={"0"} end={1680} />
                     </h2>
-                    <p>Projects Complete</p>
+                    <p>Réalisations clientes</p>
                   </div>
                 </div>
               </div>
@@ -175,7 +175,7 @@ const Index = () => {
                     <h2 className="number">
                       <Counter end={99} />%
                     </h2>
-                    <p>Satisfactions Rate</p>
+                    <p>Taux de satisfaction</p>
                   </div>
                 </div>
               </div>
@@ -187,9 +187,9 @@ const Index = () => {
                       <i className="fas fa-check" />
                     </div>
                     <h2 className="number">
-                      <Counter end={683} />+
+                      <Counter end={5} />
                     </h2>
-                    <p>Expert Team Member</p>
+                    <p>Employés</p>
                   </div>
                 </div>
               </div>
@@ -201,9 +201,9 @@ const Index = () => {
                       <i className="fas fa-check" />
                     </div>
                     <h2 className="number">
-                      <Counter end={860} />+
+                      <Counter end={125} />+
                     </h2>
-                    <p>Awards Winning</p>
+                    <p>Clients</p>
                   </div>
                 </div>
               </div>
@@ -215,7 +215,7 @@ const Index = () => {
           <h2 className="number">
             <Counter end={25} />
           </h2>
-          <h6>Years Of Experience</h6>
+          <h6>Années D'expérience</h6>
           <Link legacyBehavior href="/about">
             <a className="icon-btn">
               <i className="far fa-arrow-right" />
@@ -388,16 +388,18 @@ const Index = () => {
         <div className="container">
           <div className="row justify-content-center">
             <div className="col-lg-10">
-              <div className="section-title text-center mb-100 wow fadeInDown">
-                <span className="sub-title">
-                  <i className="flaticon-plant" />
-                  What We Do
+              <div className="section-title text-center mb-30 wow fadeInDown">
+              <h2 className="mt-40">                   
+              <i className="flaticon-plant mr-15" />
+                Nos services et prestations</h2>
+                <span className="sub-title mt-20">
+                Découvrez une palette complète de services paysagers pour transformer votre espace extérieur.
                 </span>
-                <h2>We Care Your Garden &amp; Landscape</h2>
+
               </div>
             </div>
           </div>
-          <div className="row justify-content-center">
+          {/* <div className="row justify-content-center">
             <div className="col-xl-3 col-lg-4 col-md-6">
               <div
                 className="single-service-item-two mb-80 wow fadeInDown"
@@ -490,7 +492,7 @@ const Index = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
       {/*====== End Services Section ======*/}
@@ -500,7 +502,7 @@ const Index = () => {
           {/*====== Project Slider ======*/}
           <Slider
             {...sliderProps.projectsSliderFour}
-            className="projects-slider-four wow fadeInUp"
+            className="projects-slider-three wow fadeInUp"
             data-wow-delay=".2s"
           >
             {/*====== Project Item ======*/}
@@ -515,10 +517,10 @@ const Index = () => {
                   <div className="text text-white">
                     <h3 className="title">
                       <Link legacyBehavior href="/project-details">
-                        <a>Water in Garden</a>
+                        <a>Création de jardin</a>
                       </Link>
                     </h3>
-                    <p>Professional Gardener for Garden Care</p>
+                    <p>Paysagiste</p>
                     <Link legacyBehavior href="/project-details">
                       <a className="icon-btn">
                         <i className="fal fa-long-arrow-right" />
@@ -530,7 +532,7 @@ const Index = () => {
                   <div className="text text-white">
                     <h3 className="title">
                       <Link legacyBehavior href="/project-details">
-                        <a>Garden Caring</a>
+                        <a>Paysagiste</a>
                       </Link>
                     </h3>
                   </div>
@@ -549,10 +551,10 @@ const Index = () => {
                   <div className="text text-white">
                     <h3 className="title">
                       <Link legacyBehavior href="/project-details">
-                        <a>Water in Garden</a>
+                        <a>La pépiniére</a>
                       </Link>
                     </h3>
-                    <p>Professional Gardener for Garden Care</p>
+                    <p>Pépiniériste</p>
                     <Link legacyBehavior href="/project-details">
                       <a className="icon-btn">
                         <i className="fal fa-long-arrow-right" />
@@ -564,7 +566,7 @@ const Index = () => {
                   <div className="text text-white">
                     <h3 className="title">
                       <Link legacyBehavior href="/project-details">
-                        <a>Water in Garden</a>
+                        <a>Pépiniériste</a>
                       </Link>
                     </h3>
                   </div>
@@ -583,10 +585,10 @@ const Index = () => {
                   <div className="text text-white">
                     <h3 className="title">
                       <Link legacyBehavior href="/project-details">
-                        <a>Water in Garden</a>
+                        <a>Maîtrise et Beauté : Élagage d'Excellence</a>
                       </Link>
                     </h3>
-                    <p>Professional Gardener for Garden Care</p>
+                    <p>Élagage</p>
                     <Link legacyBehavior href="/project-details">
                       <a className="icon-btn">
                         <i className="fal fa-long-arrow-right" />
@@ -598,7 +600,7 @@ const Index = () => {
                   <div className="text text-white">
                     <h3 className="title">
                       <Link legacyBehavior href="/project-details">
-                        <a>Cutting Hedge</a>
+                        <a>Élagage</a>
                       </Link>
                     </h3>
                   </div>
@@ -617,10 +619,10 @@ const Index = () => {
                   <div className="text text-white">
                     <h3 className="title">
                       <Link legacyBehavior href="/project-details">
-                        <a>Water in Garden</a>
+                        <a>Un service personnalisé pour enrichir votre quotidien</a>
                       </Link>
                     </h3>
-                    <p>Professional Gardener for Garden Care</p>
+                    <p>Service à la personne</p>
                     <Link legacyBehavior href="/project-details">
                       <a className="icon-btn">
                         <i className="fal fa-long-arrow-right" />
@@ -632,7 +634,7 @@ const Index = () => {
                   <div className="text text-white">
                     <h3 className="title">
                       <Link legacyBehavior href="/project-details">
-                        <a>Plants Greenhouse</a>
+                        <a>Service à la personne</a>
                       </Link>
                     </h3>
                   </div>
@@ -643,459 +645,7 @@ const Index = () => {
         </div>
       </section>
       {/*====== End Project Section ======*/}
-      {/*====== Start Team Section ======*/}
-      <section className="team-section pt-95 pb-50">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-8">
-              <div className="section-title text-center mb-50 wow fadeInDown">
-                <span className="sub-title">
-                  <i className="flaticon-plant" />
-                  Team Member
-                </span>
-                <h2>Meet Our Expert Gardener</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row">
-            <div className="col-lg-3 col-sm-6">
-              {/*====== Single Team Item ======*/}
-              <div
-                className="single-team-item-two mb-40 wow fadeInDown"
-                data-wow-delay=".2s"
-              >
-                <div className="member-img">
-                  <img src="assets/images/team/team-10.jpg" alt="Team Image" />
-                  <div className="social-box">
-                    <ul className="social-link">
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-facebook-f" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-youtube" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-pinterest-p" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="member-info text-center">
-                  <h4 className="title">
-                    <Link legacyBehavior href="/single-team">
-                      <a>Benjamin Hughes</a>
-                    </Link>
-                  </h4>
-                  <p>Senior Gardener</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6">
-              {/*====== Single Team Item ======*/}
-              <div
-                className="single-team-item-two mb-40 wow fadeInUp"
-                data-wow-delay=".25s"
-              >
-                <div className="member-img">
-                  <img src="assets/images/team/team-11.jpg" alt="Team Image" />
-                  <div className="social-box">
-                    <ul className="social-link">
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-facebook-f" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-youtube" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-pinterest-p" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="member-info text-center">
-                  <h4 className="title">
-                    <Link legacyBehavior href="/single-team">
-                      <a>Chester J. Thurman</a>
-                    </Link>
-                  </h4>
-                  <p>Junior Gardener</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6">
-              {/*====== Single Team Item ======*/}
-              <div
-                className="single-team-item-two mb-40 wow fadeInDown"
-                data-wow-delay=".3s"
-              >
-                <div className="member-img">
-                  <img src="assets/images/team/team-12.jpg" alt="Team Image" />
-                  <div className="social-box">
-                    <ul className="social-link">
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-facebook-f" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-twitter" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-youtube" />
-                        </a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          <i className="fab fa-pinterest-p" />
-                        </a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div className="member-info text-center">
-                  <h4 className="title">
-                    <Link legacyBehavior href="/single-team">
-                      <a>Benjamin Hughes</a>
-                    </Link>
-                  </h4>
-                  <p>Senior Gardener</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-3 col-sm-6">
-              {/*====== Experience Box ======*/}
-              <div
-                className="experience-box mt-25 mb-40 text-center wow fadeInUp"
-                data-wow-delay=".35s"
-              >
-                <h2 className="fill-text">25+</h2>
-                <h4>Experience Team Member</h4>
-                <Link legacyBehavior href="/team">
-                  <a className="btn-link">
-                    View All Member <i className="far fa-arrow-right" />
-                  </a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*====== End Team Section ======*/}
-      {/*====== Start Features Section ======*/}
-      <section className="features-seciton pb-50">
-        <div className="container">
-          <div className="row align-items-xl-end">
-            <div className="col-lg-6">
-              {/*====== Features Image Box ======*/}
-              <div className="features-image-box mb-50 wow fadeInLeft">
-                <img
-                  src="assets/images/features/features-10.png"
-                  alt="Features Image"
-                />
-              </div>
-            </div>
-            <div className="col-lg-6">
-              {/*====== Features Content Box ======*/}
-              <div className="features-content-box mb-50 wow fadeInRight">
-                <div className="section-title mb-20">
-                  <span className="sub-title">
-                    <i className="flaticon-plant" />
-                    Modern Gardening
-                  </span>
-                  <h2>We Offers Landscape &amp; Tree Plantations</h2>
-                </div>
-                <p className="mb-35">
-                  Quis autem vel eum iure reprehenderit qui in voluptate velit
-                  esse quam nihil molestiae consequatur vel illum qui dolorem
-                </p>
-                <ul className="features-list">
-                  <li>
-                    <i className="fal fa-long-arrow-right" />
-                    Quality Gardening
-                  </li>
-                  <li>
-                    <i className="fal fa-long-arrow-right" />
-                    Dedicated Team Members
-                  </li>
-                  <li>
-                    <i className="fal fa-long-arrow-right" />
-                    Guarantee Service &amp; No Hidden Cost{" "}
-                  </li>
-                </ul>
-                <Link legacyBehavior href="/about">
-                  <a className="main-btn primary-btn">Learn More Us</a>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*====== End Features Section ======*/}
-      {/*====== Start Testimonial Section ======*/}
-      <section className="testimonial-section">
-        <div className="container-fluid">
-          {/*=== Testimonial Wrapper ===*/}
-          <div className="testimonial-quote-area p-r z-1 main-bg">
-            <div className="shape shape-one">
-              <span>
-                <img src="assets/images/shape/leaf-4.png" alt="Leaf" />
-              </span>
-            </div>
-            {/*====== Quote Area ======*/}
-            <div className="quote-wrapper wow fadeInDown">
-              <div className="container">
-                <div className="row justify-content-center">
-                  <div className="col-xl-10 col-lg-12">
-                    {/*=== Client Quote Box ===*/}
-                    <div className="client-quote-box">
-                      <div className="icon">
-                        <i className="fal fa-long-arrow-right" />
-                      </div>
-                      <div className="text">
-                        <h2 className="number">
-                          <Counter end={372} />+
-                        </h2>
-                        <h4>
-                          Global Clients Happy to Get Our gardening Services{" "}
-                        </h4>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            {/*====== Testimonial Area ======*/}
-            <div className="testimonial-area pt-70 pb-50 pl-15 pr-15 wow fadeInUp">
-              <div className="container">
-                <div className="row align-items-center">
-                  <div className="col-lg-1 order-md-1 order-2">
-                    {/*=== Testimonial Dots ===*/}
-                    <div className="testimonial-dots mb-20" />
-                  </div>
-                  <div className="col-lg-11 order-md-2 order-1">
-                    {/*=== Testimonial Slider ===*/}
-                    <Slider
-                      {...sliderProps.testimonialSliderThree}
-                      className="testimonial-slider-three mb-20"
-                    >
-                      {/*=== Testimonial Item ===*/}
-                      <div className="single-testimonial-item-three d-flex">
-                        <div className="testimonial-inner-content mb-30">
-                          <ul className="ratings">
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                          </ul>
-                          <p>
-                            On the other hand we denounce with righteous
-                            indignation and dislike men who are beguiled and
-                            demoralized by the charms of pleasure
-                          </p>
-                          <div className="quote-title">
-                            <div className="icon">
-                              <img
-                                src="assets/images/testimonial/quote3.png"
-                                alt="Quote Image"
-                              />
-                            </div>
-                            <div className="title">
-                              <h6>Norman M. Devore</h6>
-                              <p className="position">CEO &amp; Founder</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="testimonial-author mb-30">
-                          <img
-                            src="assets/images/testimonial/img-4.jpg"
-                            className="rounded-circle"
-                            alt="testimonial image"
-                          />
-                        </div>
-                      </div>
-                      {/*=== Testimonial Item ===*/}
-                      <div className="single-testimonial-item-three d-flex">
-                        <div className="testimonial-inner-content mb-30">
-                          <ul className="ratings">
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                          </ul>
-                          <p>
-                            On the other hand we denounce with righteous
-                            indignation and dislike men who are beguiled and
-                            demoralized by the charms of pleasure
-                          </p>
-                          <div className="quote-title">
-                            <div className="icon">
-                              <img
-                                src="assets/images/testimonial/quote3.png"
-                                alt="Quote Image"
-                              />
-                            </div>
-                            <div className="title">
-                              <h6>Douglas D. Hall</h6>
-                              <p className="position">Senior Gardener</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="testimonial-author mb-30">
-                          <img
-                            src="assets/images/testimonial/img-4.jpg"
-                            className="rounded-circle"
-                            alt="testimonial image"
-                          />
-                        </div>
-                      </div>
-                      {/*=== Testimonial Item ===*/}
-                      <div className="single-testimonial-item-three d-flex">
-                        <div className="testimonial-inner-content mb-30">
-                          <ul className="ratings">
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                          </ul>
-                          <p>
-                            On the other hand we denounce with righteous
-                            indignation and dislike men who are beguiled and
-                            demoralized by the charms of pleasure
-                          </p>
-                          <div className="quote-title">
-                            <div className="icon">
-                              <img
-                                src="assets/images/testimonial/quote3.png"
-                                alt="Quote Image"
-                              />
-                            </div>
-                            <div className="title">
-                              <h6>Norman M. Devore</h6>
-                              <p className="position">CEO &amp; Founder</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="testimonial-author mb-30">
-                          <img
-                            src="assets/images/testimonial/img-4.jpg"
-                            className="rounded-circle"
-                            alt="testimonial image"
-                          />
-                        </div>
-                      </div>
-                      {/*=== Testimonial Item ===*/}
-                      <div className="single-testimonial-item-three d-flex">
-                        <div className="testimonial-inner-content mb-30">
-                          <ul className="ratings">
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                            <li>
-                              <i className="far fa-star" />
-                            </li>
-                          </ul>
-                          <p>
-                            On the other hand we denounce with righteous
-                            indignation and dislike men who are beguiled and
-                            demoralized by the charms of pleasure
-                          </p>
-                          <div className="quote-title">
-                            <div className="icon">
-                              <img
-                                src="assets/images/testimonial/quote3.png"
-                                alt="Quote Image"
-                              />
-                            </div>
-                            <div className="title">
-                              <h6>Douglas D. Hall</h6>
-                              <p className="position">Senior Gardener</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="testimonial-author mb-30">
-                          <img
-                            src="assets/images/testimonial/img-4.jpg"
-                            className="rounded-circle"
-                            alt="testimonial image"
-                          />
-                        </div>
-                      </div>
-                    </Slider>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*====== End Testimonial Section ======*/}
+
       {/*====== Start Blog Section ======*/}
       <section className="blog-section pt-100 pb-60">
         <div className="container">
