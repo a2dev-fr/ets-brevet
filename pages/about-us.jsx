@@ -4,10 +4,11 @@ import Layout from "@/src/layouts/Layout";
 import { sliderProps } from "@/src/sliderProps";
 import Link from "next/link";
 import Slider from "react-slick";
+
 const About = () => {
   return (
     <Layout>
-      <PageBanner pageName={"About"} />
+      <PageBanner pageName={"Notre histoire"} />
       <section className="about-section pt-95 pb-100">
         <div className="container">
           <div className="row">

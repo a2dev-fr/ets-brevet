@@ -80,7 +80,7 @@ const MobileMenu = ({ handleShow, logo, extraClass, barIcon }) => {
                     </a>
                   </li>
                   <li className="menu-item">
-                    <Link legacyBehavior href="/about">
+                    <Link legacyBehavior href="/about-us">
                       Notre histoire
                     </Link>
                   </li>

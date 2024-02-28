@@ -10,60 +10,34 @@ const Menu = () => {
           </a>
         </li>
         <li className="menu-item">
-          <Link legacyBehavior href="about">
+          <Link legacyBehavior href="about-us">
             Notre histoire
           </Link>
         </li>
         <li className="menu-item has-children">
-          <a href="#">
-            Services
+          <a href="services">
+            Nos services
             <span className="dd-trigger">
               <i className="far fa-angle-down" />
             </span>
           </a>
           <ul className="sub-menu">
             <li>
-              <Link legacyBehavior href="paysagiste">
+              <Link legacyBehavior href="services#paysagiste">
                 Paysagiste
               </Link>
             </li>
             <li>
-              <Link legacyBehavior href="pepinieriste">
+              <Link legacyBehavior href="services#pepinieriste">
                 Pépiniériste
               </Link>
             </li>
           </ul>
         </li>
-        <li className="menu-item has-children">
-          <a href="#">
+        <li className="menu-item">
+        <Link legacyBehavior href="realisations">
             Réalisations
-            <span className="dd-trigger">
-              <i className="far fa-angle-down" />
-            </span>
-          </a>
-          <ul className="sub-menu">
-            <li>
-              <Link legacyBehavior href="project-grid">
-                Project Grid
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="project-grid-2-column">
-                Project Grid Two
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="project-masonry">
-                Project Masonry
-              </Link>
-            </li>
-            <li>
-              <Link legacyBehavior href="project-details">
-                Project Details
-              </Link>
-            </li>
-          </ul>
-          
+          </Link>
         </li>
         <li className="menu-item">
           <a href="/contact">

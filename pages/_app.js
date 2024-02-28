@@ -7,7 +7,7 @@ const App = ({ Component, pageProps }) => {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 200);
+    }, 30);
   }, []);
 
   return (

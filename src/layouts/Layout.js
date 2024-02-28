@@ -5,7 +5,7 @@ import VideoPopup from "../components/VideoPopup";
 import { animation } from "../utils";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
-const Layout = ({ header, children, footer }) => {
+const Layout = ({ children, footer }) => {
   useEffect(() => {
     niceSelect();
   }, []);
@@ -16,7 +16,7 @@ const Layout = ({ header, children, footer }) => {
 
   return (
     <Fragment>
-      <Header header={header} />
+      <Header />
       <VideoPopup />
       <ImageView />
       {children}

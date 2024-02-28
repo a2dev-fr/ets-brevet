@@ -1,0 +1,52 @@
+// Services.module.scss
+.services-container {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 150px 15px 130px;
+  }
+  
+  .title-tile {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border-radius: 0.25rem;
+    color: white;
+    align-items: center;
+    background: #6b7d5c;
+    .icon {
+      font-size: 30px;
+    }
+    .title {
+      margin-left: 0.5rem;
+    }
+  }
+  
+  .content-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    align-items: flex-start;
+  
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .image-container {
+      max-width: 100%;
+  
+      @media (max-width: 768px) {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+      }
+  
+      img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.25rem;
+      }
+    }
+  }
+  

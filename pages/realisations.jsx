@@ -3,21 +3,21 @@ import Partners from "@/src/components/Partners";
 import Layout from "@/src/layouts/Layout";
 import dynamic from "next/dynamic";
 
-const ProjectGridIsotope = dynamic(
-  () => import("@/src/components/isotope/ProjectGridIsotope"),
+const Project2GridIsotope = dynamic(
+  () => import("@/src/components/isotope/Project2GridIsotope"),
   {
     ssr: false,
   }
 );
-const ProjectGrid = () => {
+const Realisations = () => {
   return (
     <Layout>
-      <PageBanner pageName={"Project Grid"} />
+      <PageBanner pageName={"Project Full Width"} />
       {/*====== Start Gallery section ======*/}
-      <ProjectGridIsotope />
+      <Project2GridIsotope />
       {/*====== End Gallery section ======*/}
       <Partners />
     </Layout>
   );
 };
-export default ProjectGrid;
+export default Realisations;
