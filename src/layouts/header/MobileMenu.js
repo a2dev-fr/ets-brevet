@@ -107,115 +107,16 @@ const MobileMenu = ({ handleShow, logo, extraClass, barIcon }) => {
                       </li>
                     </ul>
                   </li>
-                  <li className="menu-item has-children">
-                    <a href="#">
+                  <li className="menu-item">
+                    <a href="/realisations">
                       Réalisations
-                      <span
-                        className="dd-trigger"
-                        onClick={() => active("Portfolio")}
-                      >
-                        <i className="far fa-angle-down" />
-                      </span>
                     </a>
-                    <ul className="sub-menu" style={activeSubMenu("Portfolio")}>
-                      <li>
-                        <Link legacyBehavior href="project-grid">
-                          Project Grid
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="project-grid-2-column">
-                          Project Grid Two
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="project-masonry">
-                          Project Masonry
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="project-details">
-                          Project Details
-                        </Link>
-                      </li>
-                    </ul>
                   </li>
                   <li className="menu-item">
                     <a href="/contact">
                       Contact
                     </a>
                   </li>
-                  {/* <li className="menu-item has-children">
-                    <a href="#">
-                      Blog
-                      <span
-                        className="dd-trigger"
-                        onClick={() => active("Blog")}
-                      >
-                        <i className="far fa-angle-down" />
-                      </span>
-                    </a>
-                    <ul className="sub-menu" style={activeSubMenu("Blog")}>
-                      <li>
-                        <Link legacyBehavior href="blog-standard">
-                          Blog Standard
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="blog-details">
-                          Blog Details
-                        </Link>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className="menu-item has-children">
-                    <a href="#">
-                      Pages
-                      <span
-                        className="dd-trigger"
-                        onClick={() => active("Pages")}
-                      >
-                        <i className="far fa-angle-down" />
-                      </span>
-                    </a>
-                    <ul className="sub-menu" style={activeSubMenu("Pages")}>
-                      <li>
-                        <Link legacyBehavior href="team">
-                          Our Team
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="shop">
-                          Our Shop
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="product-details">
-                          Product Details
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="testimonials">
-                          Testimonial
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="pricing">
-                          Pricing
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="faqs">
-                          Faq
-                        </Link>
-                      </li>
-                      <li>
-                        <Link legacyBehavior href="contact">
-                          Contact
-                        </Link>
-                      </li>
-                    </ul>
-                  </li> */}
                 </ul>
               </nav>
               {/*====== Menu Button ======*/}
@@ -232,17 +133,6 @@ const MobileMenu = ({ handleShow, logo, extraClass, barIcon }) => {
                   <a className="main-btn primary-btn">Appelez-nous</a>
                 </Link>
               </div>
-              {/* <div
-                className="bar-button"
-                data-toggle="modal"
-                data-target="#sidebar-modal"
-                onClick={handleShow}
-              >
-                <img
-                  src={barIcon ? barIcon : "assets/images/bar.png"}
-                  alt="Image"
-                />
-              </div> */}
               <div
                 className="navbar-toggler"
                 onClick={() => setToggle(!toggle)}

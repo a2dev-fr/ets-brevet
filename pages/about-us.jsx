@@ -1,4 +1,4 @@
-import PageBanner from "@/src/components/PageBanner";
+import Counter from "@/src/components/Counter";
 import Partners from "@/src/components/Partners";
 import Layout from "@/src/layouts/Layout";
 import { sliderProps } from "@/src/sliderProps";
@@ -8,7 +8,223 @@ import Slider from "react-slick";
 const About = () => {
   return (
     <Layout>
-      <PageBanner pageName={"Notre histoire"} />
+      {/*====== Start Banner Section ======*/}
+      <section className="banner-section">
+        {/*=== Hero Wrapper ===*/}
+        <div className="hero-wrapper-one gray-bg">
+          <div className="shape shape-one animate-float-y">
+            <span>
+              <img src="assets/images/hero/shape-1.png" alt="shape" />
+            </span>
+          </div>
+          <div className="shape shape-two animate-float-x">
+            <span>
+              <img src="assets/images/hero/shape-2.png" alt="shape" />
+            </span>
+          </div>
+          <div className="shape shape-three animate-float-x">
+            <span>
+              <img src="assets/images/hero/shape-3.png" alt="shape" />
+            </span>
+          </div>
+          <div className="container">
+            <div className="row align-items-lg-center">
+              <div className="col-xl-6 col-lg-12">
+                {/*=== Hero Content ===*/}
+                <div className="hero-content">
+                  <h1 className="wow fadeInUp" data-wow-delay=".4s">
+                    Votre paysagiste à votre service depuis 1890
+                  </h1>
+
+                  <h3 className="wow fadeInLeft mb-30" data-wow-delay=".6s">
+                    à Charbonnières-les-Bains
+                  </h3>
+                  <p className="wow fadeInDown" data-wow-delay=".7s">
+                    Notre équipe se tient à votre disposition pour la création, et l’entretien de votre extérieur.
+                  </p>
+                  <div
+                    className="hero-button mb-30 wow fadeInUp"
+                    data-wow-delay=".9s"
+                  >
+                    <Link legacyBehavior href="/about">
+                      <a className="main-btn golden-btn mb-10">Notre histoire</a>
+                    </Link>
+                    <Link legacyBehavior href="/services">
+                      <a className="main-btn filled-btn mb-10">Nos services</a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+              <div className="col-xl-6 col-lg-12">
+                {/*=== Hero Image Box ===*/}
+                <div
+                  className="hero-image-box d-xl-block d-none wow fadeInRight"
+                  data-wow-delay=".75s"
+                >
+                  <img
+                    src="assets/images/hero/arbres.jpg"
+                    alt="Hero Image"
+                  />
+                  <div className="shape hero-svg">
+                    <svg
+                      width={237}
+                      height={569}
+                      viewBox="0 0 237 569"
+                      fill="none"
+                    >
+                      <path
+                        d="M0.552583 568.307L1.99989 0.226473C1.99989 0.226473 237.025 -9.37181 236.276 284.731C235.527 578.834 0.552583 568.307 0.552583 568.307Z"
+                        fill="#F1D2A9"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/*====== End Banner Section ======*/}
+      {/*====== Start Features Section ======*/}
+      <section className="features-section-two p-r z-1">
+        {/*=== Features Wrapper ===*/}
+        <div className="features-wrapper-two main-bg wow fadeInDown">
+          <div className="shape shape-one">
+            <span>
+              <img src="assets/images/shape/leaf-5.png" alt="Leaf" />
+            </span>
+          </div>
+          <div className="shape shape-two">
+            <span>
+              <img src="assets/images/shape/leaf-5.png" alt="Leaf" />
+            </span>
+          </div>
+          <div className="shape shape-three">
+            <span>
+              <img src="assets/images/shape/leaf-5.png" alt="Leaf" />
+            </span>
+          </div>
+          <div className="features-area pb-30">
+            <div className="row justify-content-center">
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                {/*=== Features Item ===*/}
+                <div className="single-features-item-two mb-40 wow fadeInUp">
+                  <div className="text">
+                    <div className="icon">
+                      <i className="fl-icon flaticon-watering-plants" />
+                      <a href="#" className="icon-btn">
+                        <i className="fal fa-long-arrow-right" />
+                      </a>
+                    </div>
+                    <h5 className="title">Expertise en botanique et espèces végétales</h5>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                {/*=== Features Item ===*/}
+                <div className="single-features-item-two mb-40 wow fadeInDown">
+                  <div className="text">
+                    <div className="icon">
+                      <i className="fl-icon flaticon-watering-plants" />
+                      <a href="#" className="icon-btn">
+                        <i className="fal fa-long-arrow-right" />
+                      </a>
+                    </div>
+                    <h5 className="title">Conseils personnalisés en fonction de votre terrain</h5>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-4 col-md-6 col-sm-6">
+                {/*=== Features Item ===*/}
+                <div className="single-features-item-two mb-40 wow fadeInUp">
+                  <div className="text">
+                    <div className="icon">
+                      <i className="fl-icon flaticon-watering-plants" />
+                      <a href="#" className="icon-btn">
+                        <i className="fal fa-long-arrow-right" />
+                      </a>
+                    </div>
+                    <h5 className="title">Aménagements sur-mesure pour chaque espace extérieur</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/*=== Counter Area ===*/}
+          <div className="counter-area">
+            <div className="row pt-70">
+              <div className="col-lg-3 col-sm-6">
+                {/*=== Counter Item ===*/}
+                <div className="single-counter-item-two mb-30 wow fadeInDown">
+                  <div className="inner-counter">
+                    <div className="icon">
+                      <i className="fas fa-check" />
+                    </div>
+                    <h2 className="number">
+                      <Counter decimals={"0"} end={1680} />
+                    </h2>
+                    <p>Réalisations clientes</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-sm-6">
+                {/*=== Counter Item ===*/}
+                <div className="single-counter-item-two mb-30 wow fadeInUp">
+                  <div className="inner-counter">
+                    <div className="icon">
+                      <i className="fas fa-check" />
+                    </div>
+                    <h2 className="number">
+                      <Counter end={99} />%
+                    </h2>
+                    <p>Taux de satisfaction</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-sm-6">
+                {/*=== Counter Item ===*/}
+                <div className="single-counter-item-two mb-30 wow fadeInDown">
+                  <div className="inner-counter">
+                    <div className="icon">
+                      <i className="fas fa-check" />
+                    </div>
+                    <h2 className="number">
+                      <Counter end={5} />
+                    </h2>
+                    <p>Employés</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-lg-3 col-sm-6">
+                {/*=== Counter Item ===*/}
+                <div className="single-counter-item-two mb-30 wow fadeInUp">
+                  <div className="inner-counter">
+                    <div className="icon">
+                      <i className="fas fa-check" />
+                    </div>
+                    <h2 className="number">
+                      <Counter end={125} />+
+                    </h2>
+                    <p>Clients</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/*=== Experience Box ===*/}
+        <div className="experience-box-two wow fadeInRight">
+          <h2 className="number">
+            <Counter end={25} />
+          </h2>
+          <h6>Années D'expérience</h6>
+          <Link legacyBehavior href="/about">
+            <a className="icon-btn">
+              <i className="far fa-arrow-right" />
+            </a>
+          </Link>
+        </div>
+      </section>
       <section className="about-section pt-95 pb-100">
         <div className="container">
           <div className="row">
@@ -220,80 +436,6 @@ const About = () => {
         </div>
       </section>
       {/*====== End Features Section ======*/}
-      {/*====== Start Team Section ======*/}
-      <section className="team-section pt-95">
-        <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-xl-8 col-lg-12">
-              {/*====== Section-title ======*/}
-              <div className="section-title text-center mb-50 wow fadeInDown">
-                <span className="sub-title">
-                  <i className="flaticon-plant" />
-                  Team Member
-                </span>
-                <h2>Meet Our Expert Gardener</h2>
-              </div>
-            </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="single-team-item mb-50 wow fadeInLeft">
-                <div className="member-img">
-                  <img src="assets/images/team/team-1.jpg" alt="Team Image" />
-                  <div className="icon-btn">
-                    <i className="far fa-plus" />
-                  </div>
-                </div>
-                <div className="member-info text-center">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/single-team">
-                      Benjamin S. Hughes
-                    </Link>
-                  </h3>
-                  <p>Senior Gardener</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="single-team-item mb-50 wow fadeInDown">
-                <div className="member-img">
-                  <img src="assets/images/team/team-2.jpg" alt="Team Image" />
-                  <div className="icon-btn">
-                    <i className="far fa-plus" />
-                  </div>
-                </div>
-                <div className="member-info text-center">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/single-team">
-                      Michael K. Greenwalds
-                    </Link>
-                  </h3>
-                  <p>Senior Gardener</p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4 col-md-6 col-sm-12">
-              <div className="single-team-item mb-50 wow fadeInRight">
-                <div className="member-img">
-                  <img src="assets/images/team/team-3.jpg" alt="Team Image" />
-                  <div className="icon-btn">
-                    <i className="far fa-plus" />
-                  </div>
-                </div>
-                <div className="member-info text-center">
-                  <h3 className="title">
-                    <Link legacyBehavior href="/single-team">
-                      Joshua M. Miranda
-                    </Link>
-                  </h3>
-                  <p>Junior Gardener</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/*====== End Team Section ======*/}
       {/*====== Start CTA Section  ======*/}
       <section
         className="cta-bg-section bg_cover pt-100 p-r z-1"
